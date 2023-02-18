@@ -40,7 +40,8 @@ return new class extends Migration
 		$table->integer('flag')->default('1');
 		$table->string('wikiDataId')->nullable();
         $table->string('is_default', 6)->default('no');
-        $table->timestamps();
+       $table->string('created_at')->nullable();
+           $table->string('updated_at')->nullable();
 
         });
     }
