@@ -28,7 +28,8 @@ return new class extends Migration
             //$table->timestamp('updated_at')->default('CURRENT_TIMESTAMP');
             $table->tinyInteger('flag')->default('1');
             $table->string('wikiDataId')->nullable()->default('NULL');
-            $table->timestamps();
+            $table->string('created_at')->nullable();
+           $table->string('updated_at')->nullable();
         });
     }
 
